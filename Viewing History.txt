@@ -1,2 +1,13 @@
-wewew
-wewewwew
+# Show full commit history
+        -> git log
+        -> git log --oneline (condensed version)
+        -> git log --graph --oneline --all (branch graph visualization)
+
+# Show commit details (even file changes)
+        -> git show <commit-hash>
+
+# Displays the changes in your working directory that have not yet been added to the staging area (unstaged changes)
+        -> git diff
+# Shows the changes in the staging area that have not yet been committed. 
+        -> git diff --staged
+        
