@@ -1,3 +1,8 @@
+NOTE:
+** git rebase <branch>       for cleaner history (will make it linear) 
+** git merge <branch>        to keep branching history (will maintain the graph/branching)
+
+
 # Rebase feature branch with main
     -> git checkout feature/login
     -> git rebase main
@@ -10,3 +15,4 @@
     -> git rebase --abort
 
 🔹 Rebase rewrites history (avoid on shared/public branches).
+
