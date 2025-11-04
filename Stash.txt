@@ -1,0 +1,19 @@
+# Save uncommitted changes(so you can change branch through checkout)
+        -> git stash             
+
+# List stashes
+        -> git stash list        
+
+# Reapply last stash (keep stash)
+        -> git stash apply (apply stash@{0})
+        -> git stash apply stash@{1} (for specific stash)
+
+# Reapply and delete stash
+        -> git stash pop (apply stash@{0})
+        -> git stash pop stash@{1} (for specific stash)
+
+# Delete specific stash    
+        -> git stash drop (apply stash@{0})  
+        -> git stash drop stash@{1} (for specific stash)
+
+
