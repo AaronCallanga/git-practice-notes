@@ -1,0 +1,9 @@
+# Preview untracked files to be removed
+        -> git clean -n
+# Remove untracked files (new files/ not added)
+        -> git clean -f     (files only)
+        -> git clean -fd    (files & directory)
+# Garbage collect unnecessary files & optimize repo
+        -> git gc
+# Remove unreachable objects
+        -> git prune
