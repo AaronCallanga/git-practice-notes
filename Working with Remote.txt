@@ -1,0 +1,17 @@
+# List remotes
+    -> git remote -v
+
+# Add remote origin
+    -> git remote add origin <url>
+
+# Push local → remote (set upstream)
+    -> git push -u origin <branch>   (git push - for subsequent request)
+
+# Fetch + merge remote changes
+    -> git pull origin <branch>      
+
+# Get latest commits (no merge)
+    -> git fetch (you have to merge/rebase manually)
+
+# Delete remote branch
+    -> git push origin --delete branch-name
