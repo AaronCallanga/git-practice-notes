@@ -1,0 +1,9 @@
+Unlike git log, which shows the commit history of a branch, git reflog tracks changes to the references themselves, 
+like HEAD moving between branches, commits being created, resets, merges, and rebases. This log is strictly local to 
+your repository and is not shared when pushing, fetching, or cloning.
+
+# Show Reference Logs (reflogs) - a history that tracks all reference movement
+        -> git reflog
+
+# Checkout to previous state
+        -> git checkout <commit-hash>
