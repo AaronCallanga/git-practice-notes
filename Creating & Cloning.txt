@@ -1,0 +1,6 @@
+# Initialize a new repo in current directory
+        -> git Initialize
+
+# Clone remote repo to local machine
+        -> git clone <url>
+        -> git clone -b branch-name <url>  (specific branch)
