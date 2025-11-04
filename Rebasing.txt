@@ -1,0 +1,12 @@
+# Rebase feature branch with main
+    -> git checkout feature/login
+    -> git rebase main
+
+# If conflicts happen, fix them manually, then:
+    -> git add .
+    -> git rebase --continue
+
+# Abort rebase
+    -> git rebase --abort
+
+🔹 Rebase rewrites history (avoid on shared/public branches).

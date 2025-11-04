@@ -1,0 +1,45 @@
+Git - version control. Allows you to track your code and files. Helps in collaboration making teams efficient and organized
+
+Working Directory = IDE or Local workspace
+Staging Area = place where staged files are added (git add)
+Local Repository = private timeline of commits
+Remote Repository = repository hosted on the internet (Github/Gitlab...)
+
+# Sample Workflow
+    1. Check status
+    git status
+
+    2. Add files to staging
+    git add file.txt              # Add single file
+    git add .                     # Add all changes
+
+    3. Commit changes
+    git commit -m "Meaningful message"
+    git commit -am "Quick commit"  (skip staging repeatedly) (only for tracked files - already git add)
+
+    5. Pushing to remote repository
+    git push -u origin master (master branch)
+    git push  (for subsequent request)
+
+    💡 Always commit small, meaningful changes. Use imperative verbs like “Add”, “Fix”, “Update”.
+
+    ==========================================================================================================
+    1. Clone repo
+    git clone https://github.com/your-org/app.git
+
+    2. Create feature branch
+    git checkout -b feature/add-logging
+
+    3. Make changes
+    git add .
+    git commit -m "Add centralized logging"
+
+    4. Sync with main
+    git fetch origin main
+    git rebase origin/main
+
+    5. Push to remote
+    git push -u origin feature/add-logging
+
+    6. Create Pull Request -> Merge -> Done
+
