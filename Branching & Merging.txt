@@ -1,0 +1,28 @@
+# Create branch
+       -> git branch feature/<specific-feature>
+
+# Switch branches
+       -> git checkout feature/login
+       -> git switch feature/login    (newer)
+
+# Create & switch
+       -> git checkout -b feature/login
+
+# List branches
+       -> git branch
+
+# Merge branch into current
+       -> git merge feature/login
+
+# Delete branch
+       -> git branch -d feature/login
+       -> git branch -D feature/login  # force delete
+
+# Naming Coventions:
+Prefixes for Categorization: Employ prefixes to categorize the type of work being done. 
+Common prefixes include:
+        feature/: For new features (e.g., feature/user-profile-page).
+        bugfix/: For fixing bugs (e.g., bugfix/login-error-fix).
+        hotfix/: For urgent fixes to production issues (e.g., hotfix/critical-security-patch).
+        release/: For preparing a new release (e.g., release/v1.0.0). 
+        chore/: For non-code tasks like dependency updates or documentation (e.g., chore/update-dependencies). 
