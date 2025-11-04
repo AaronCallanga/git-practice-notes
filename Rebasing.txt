@@ -17,7 +17,7 @@ NOTE:
 🔹 Rebase rewrites history (avoid on shared/public branches).
 
 
-// REBASE
+// REBASE (linear commit history - rebase simplifies it)
 MY PC@DESKTOP-B44O69I MINGW64 ~/Desktop/git-practice (master)
 $ git log --oneline --graph
 * 2eef1f0 (HEAD -> master) master branch changes
@@ -33,5 +33,24 @@ $ git log --oneline --graph
 * 57d5077 feature branch changes
 * 84072b9 note
 
-// MERGE
-hmmm
+// MERGE (shows branching commit history)
+MY PC@DESKTOP-B44O69I MINGW64 ~/Desktop/git-practice (master)
+$ git log --oneline --graph
+* 01535e9 (HEAD -> master) master change latest
+* ed41362 master branch change
+* dd9913e master branch changes
+* d28d1cd feature branch change
+* 30ef166 feature branch change
+
+After git merge <branch> (it put the feature branch commits after the master commit, basically, it just added the branch commits)
+MY PC@DESKTOP-B44O69I MINGW64 ~/Desktop/git-practice (master)
+$ git log --oneline --graph
+*   6ae5707 (HEAD -> master) Merge branch 'Rebasing/docs' merge
+|\
+| * 7d8731d (Rebasing/docs) feature change latest
+* | 01535e9 master change latest
+* | ed41362 master branch change
+* | dd9913e master branch changes
+|/
+* d28d1cd feature branch change
+* 30ef166 feature branch change
