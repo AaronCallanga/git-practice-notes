@@ -1,9 +1,0 @@
-hello world
-test
-
-staged to unstaaged -> git restore --staged . <file>
-undo changes in working directory(remove unstaged changes) -> git restore . <file>
-undo last commit w/o discarding the changes - git reset --soft HEAD~1
-undo last commit w/ discarding the changes - git reset --hard HEAD~1
-undo specific commit - git revert <hash>
-undo changes in working directory and revert to latest commit - git checkout HEAD -- . <file>
