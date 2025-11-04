@@ -17,23 +17,20 @@ NOTE:
 🔹 Rebase rewrites history (avoid on shared/public branches).
 
 
-
-MY PC@DESKTOP-B44O69I MINGW64 ~/Desktop/git-practice (master)
-$ git log --oneline
-dc08443 (HEAD -> master) Branching & Merging
-da44a06 Viewing History
-
-
+// REBASE
 MY PC@DESKTOP-B44O69I MINGW64 ~/Desktop/git-practice (master)
 $ git log --oneline --graph
-* dc08443 (HEAD -> master) Branching & Merging
-* da44a06 Viewing History
-
-After git rebase <branch>
-MY PC@DESKTOP-B44O69I MINGW64 ~/Desktop/git-practice (master)
-$ git log --oneline --graph
-* 84072b9 (HEAD -> master, Rebasing/docs) note
+* 2eef1f0 (HEAD -> master) master branch changes
+* 84072b9 note
 * 6b42813 test
 * bdfb214 infos
-* dc08443 Branching & Merging
-* da44a06 Viewing History
+
+After git rebase <branch>  (it copy the commit of master branch that the feature-branch does not have and put the commit of feature branch first, then the commit of master branch)
+MY PC@DESKTOP-B44O69I MINGW64 ~/Desktop/git-practice (master)
+$ git log --oneline --graph
+* e596af9 (HEAD -> master) master branch changes
+* 30ef166 (Rebasing/docs) feature branch change
+* 57d5077 feature branch changes
+* 84072b9 note
+
+// MERGE
