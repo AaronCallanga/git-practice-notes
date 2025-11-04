@@ -6,8 +6,13 @@
 # Show commit details (even file changes)
         -> git show <commit-hash>
 
-# Displays the changes in your working directory that have not yet been added to the staging area (unstaged changes)
-        -> git diff
-# Shows the changes in the staging area that have not yet been committed. 
-        -> git diff --staged
-        
+# Displays differences
+        -> git diff                                         (changes in working directory not yet staged)
+        -> git diff --staged                                (changes in the staging area not yet commited)
+        -> git diff HEAD                                    (changes both staged and unstaged, compared to last commit)
+        -> git diff <commit1> <commit2>                     (state of the repository between two specific commits)
+        -> git diff <branch1> <branch2>                     (differences between the tips of two branches)
+        -> git diff <commit> <file_path>                    (changes in a specific file between the working directory and a particular commit)
+        -> git diff <branch1> <branch2> <file_path>         (compares a specific file between two branches)
+        -> git diff <commit1>..<commit2>                    (compares the changes on a branch starting from a common ancestor up to the second commit)
+              ex: git diff main...feature-branch             --  This is often used with branch names 
